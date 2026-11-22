@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Invited | Event Name</title>
+  <meta name="description" content="Join us for a special event. Date, time and location inside.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HERO / INVITATION -->
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="hero-tag">You're Invited</p>
+      <h1>Summer Get-Together</h1>
+      <p class="hero-date">Saturday, 20th December 2026</p>
+      <p class="hero-time">2:00 PM – 7:00 PM</p>
+
+      <!-- Countdown -->
+      <div class="countdown" id="countdown">
+        <div class="count-box">
+          <span class="count-number" id="days">00</span>
+          <span class="count-label">Days</span>
+        </div>
+        <div class="count-box">
+          <span class="count-number" id="hours">00</span>
+          <span class="count-label">Hours</span>
+        </div>
+        <div class="count-box">
+          <span class="count-number" id="minutes">00</span>
+          <span class="count-label">Minutes</span>
+        </div>
+        <div class="count-box">
+          <span class="count-number" id="seconds">00</span>
+          <span class="count-label">Seconds</span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#details" class="btn btn-primary">Event Details</a>
+        <a href="#rsvp" class="btn btn-outline">RSVP Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT DETAILS -->
+  <section id="details" class="section">
+    <div class="container">
+      <h2 class="section-title">Event Details</h2>
+
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="detail-icon">📅</div>
+          <h3>Date</h3>
+          <p>Saturday, 20th December 2026</p>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">🕒</div>
+          <h3>Time</h3>
+          <p>2:00 PM prompt</p>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">📍</div>
+          <h3>Location</h3>
+          <p>
+            <!-- Change this -->
+            Example Hall,<br>
+            15 Sample Road, Lagos
+          </p>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">👗</div>
+          <h3>Dress Code</h3>
+          <p>Smart Casual / Colorful</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT THE EVENT -->
+  <section class="section section-alt">
+    <div class="container about-event">
+      <h2 class="section-title">About The Event</h2>
+      <p>
+        <!-- Change this text -->
+        Come celebrate with us! There will be good food, music, games, and great company. 
+        Whether you’re coming with friends or family, it’s going to be a beautiful afternoon.
+      </p>
+      <p>
+        We can’t wait to see you there.
+      </p>
+    </div>
+  </section>
+
+  <!-- RSVP SECTION -->
+  <section id="rsvp" class="section">
+    <div class="container rsvp-box">
+      <h2 class="section-title">Will You Attend?</h2>
+      <p class="section-subtitle">Let us know so we can prepare for you</p>
+
+      <form class="rsvp-form" id="rsvpForm">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <select name="guests" required>
+          <option value="">Number of Guests</option>
+          <option value="1">1 Person</option>
+          <option value="2">2 People</option>
+          <option value="3">3 People</option>
+          <option value="4">4 People</option>
+          <option value="5+">5 or more</option>
+        </select>
+        <textarea name="message" rows="3" placeholder="Any message? (optional)"></textarea>
+        <button type="submit" class="btn btn-primary">Submit RSVP</button>
+      </form>
+
+      <p class="or-text">or</p>
+
+      <a href="https://wa.me/2348012345678?text=Hello%2C%20I%20will%20be%20attending%20the%20event" 
+         class="btn btn-outline whatsapp-btn" target="_blank">
+        Confirm on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>We look forward to seeing you!</p>
+      <p class="footer-note">© <span id="year"></span> Event Invitation</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
